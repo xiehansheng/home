@@ -32,7 +32,7 @@ body::before {
 }
 .box-top {
     width: 100%;
-    min-width: 1350px;
+    min-width: 1200px;
     background-color: rgba(255,255,255,0.5);
     padding: 20px;
     /*border-bottom-left-radius: 8px;*/
