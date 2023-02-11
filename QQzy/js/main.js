@@ -14,10 +14,9 @@ function playMusic() {
     var player = document.getElementById("audio");
     play();
     function play(){
-    swal("欢迎浏览玖爱三玖的QQ主页\n请问是否开启音乐\n一边浏览一边听呢？", {
+    swal("欢迎浏览玖爱三玖的QQ主页\nQQ 2250535092", {
             buttons: {
-                cancel: "开启",
-                allow: "关闭"
+                cancel: "好的"
             }
         }).then(function(value) {
             if (value == "allow") {
