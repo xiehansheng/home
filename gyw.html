@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人介绍页-三玖</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* 标题 */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url(img/主页背景.WEBP) no-repeat;
+    color: pink;
+  }
+
+  /* 标题字体加大 */
+  .header h1 {
+    font-size: 40px;
+  }
+
+  /* 导航 */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* 导航栏样式 */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  /* 右侧链接*/
+  .navbar a.right {
+    float: right;
+  }
+
+  /* 鼠标移动到链接的颜色 */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* 列容器 */
+  .row { 
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
+  /* 创建两个列 */
+  /* 边栏 */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  /* 主要的内容区域 */
+  .main { 
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+
+  /* 测试图片 */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* 底部 */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+
+  /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+  @media screen and (max-width: 700px) {
+    .row { 
+      flex-direction: column;
+    }
+  }
+
+  /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="header">
+  <h1>关于我</h1>
+  <p>一个自学html的拉跨初中生</p>
+  </div>
+
+  <div class="navbar">
+  <a href="index.html">主页</a>
+  <a href="mailto:2250535092@qq.com">邮箱联系我</a>
+  <a href="https://wpa.qq.com/wpa_jump_page?v=3&uin=2250535092&site=qq&menu=yes">QQ联系我</a>
+  <a href="https://b23.tv/k2cGzV1" class="right">B站主页</a>
+  </div>
+
+  <div class="row">
+  <div class="side">
+  <h2>关于我</h2>
+  <h5>我的照片:</h5>
+  <div class="fakeimg" style="height:200px;"><img src="img/我.WEBP"width="250"height="165"/></div>
+  <p>QQ：2250535092<br>Email：xiehansheng1114@foxmail.com</p>
+  <h3>更多内容</h3>
+   <video width="320" height="240" controls="controls">
+        <source src="video/漫剪.mp4" >
+    </video>
+  <div class="main">
+  <h2>我的作品</h2>
+  <h5>其实有很多都是去CSDN，Github里借鉴的</h5>
+  <div class="fakeimg" style="height:200px;"><img src="img/介绍1.jpg"width="250" height="165"/></div>
+  <p>摆烂之路里程<hr></p>
+  <p>写了大概有5、6个吧.<br>但是有很多因为没啥技术含量也就不放出来了<br>蟹java是QQ模块的辅助java<br>由我自己而写，当然也有一些大佬帮助</p>
+  <br>
+  <h2>番剧推荐</h2>
+  <h5>我最爱看的番</h5>
+  <div class="fakeimg" style="height:200px;"><img src="img/推荐番剧.jpg"width="250" height="165"/></div>
+  <p>《五等分花嫁》《中二病》《四谎》</p>
+  <font color="red"><p><b>以及新海诚所有作品！！！</b></p><hr></font>
+
+  <div style="text-align:center"><span>至今博客已安全运行<span id="days">0</span>天</span>
+  <script>
+  var s1 = '2023-02-10';//设置为你的建站时间
+  s1 = new Date(s1.replace(/-/g, "/"));
+  s2 = new Date();
+  var days = s2.getTime() - s1.getTime();
+  var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+  document.getElementById('days').innerHTML = number_of_days;
+  </script>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div style="
+opacity: 0.5;
+  text-align:center;
+  padding:40px;
+  font-size:12px;
+  ">
+ <script>
+  var mydate = new Date();
+  document.writeln("Copyright&nbsp;&copy;&nbsp;2022 - "+mydate.getFullYear()+'&nbsp;By 谢');
+  </script>
+  </p>
+  <p class="copyright">玖爱三玖.的个人介绍页
+  </p>
+  </section>
+  <script src="flexible.js"></script>
+  <!-- 音乐播放器代码 -->
+  <script id="xplayer" src="https://music.xfyun.club/Static/player/player.js" key="63e78f4737e75" m="1"></script>
+  </body>
+  </html>
